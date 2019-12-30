@@ -1,0 +1,22 @@
+.contact_block i {
+    color:#5F884E;
+    margin: 0 40px;
+}
+
+.contact_block h3 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.contact_block b {
+    color: #176bef;
+}
+
+.contact_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px auto;
+}

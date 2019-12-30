@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Roboto:400,500&display=swap");
+
+@import url(nav.css);
+@import url(about_container.css);
+@import url(project_container.css);
+@import url(resume_container.css);
+@import url(contact_container.css);
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile_only {
+  display: none;
+}
+
+.main {
+  height: 100%;
+  width: 66.67%;
+  float: right;
+  background-color: #FFEBC6;
+}
+
+.section_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFEBC6;
+}
+
+.project_container,
+.resume_container,
+.contact_container {
+  display: none;
+}
+
+.about_container,
+.project_container,
+.resume_container,
+.contact_container {
+  height: 95%;
+  width: 95%;
+  background-color: #FFEBC6;
+}
+
+@media screen and (max-width: 1500px) and (min-width: 992px) {
+  .row2 {
+    display: inline-block;
+  }
+
+  .align_right,
+  .align_left {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    margin: 25px auto;
+  }
+
+  .row1 > h2,
+  .row3 > h2 {
+    margin: 25px auto;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .mobile_only {
+    display: block;
+  }
+
+  .nav,
+  .main {
+    float: none;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .section_container {
+    height: auto;
+  }
+
+  .about_container,
+  .project_container,
+  .resume_container,
+  .contact_container {
+    height: 100%;
+    width: 90%;
+  }
+
+  .row2 {
+    display: inline-block;
+  }
+
+  .align_right,
+  .align_left {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    margin: 25px auto;
+  }
+
+  .row1 > h2,
+  .row3 > h2 {
+    margin: 25px auto;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+}

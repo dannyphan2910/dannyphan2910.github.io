@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Danny Phan</title>
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://kit.fontawesome.com/9c4e2bc556.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="nav" id="nav">
+			<div class="mobile_nav_container">
+				<button class="btn_close_nav mobile_only" onclick="nav_close()">&times;</button>
+			</div>
+			<h1 class="title">Danny<br />Phan</h1>
+			<div class="img_container">
+				<div class="row1">
+					<h2><span><a href="#" onclick="set('about_container')">
+								About Me
+							</a></span></h2>
+				</div>
+				<div class="row2">
+					<h2 class="align align_left"><span><a href="#" onclick="set('project_container')">
+								Projects
+							</a></span></h2>
+					<img src="assets/profilepic.jpg" class="profilepic"></img>
+					<h2 class="align align_right"><span><a href="#" onclick="set('resume_container')">
+								Resume
+							</a></span></h2>
+				</div>
+				<div class="row3">
+					<h2><span><a href="#" onclick="set('contact_container')">
+								Contact Me
+							</a></span></h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<div class="mobile_nav_container_open">
+				<button class="btn_open_nav mobile_only" onclick="nav_open()">&#9776;</button>
+			</div>
+			<div class="section_container">
+				<div class="about_container" id="about_container">
+					<h1 class="section_title">Hello,</h1>
+					<h3 class="intro">I am Danny (Dang) Phan, a sophomore at Brandeis University in Massachusetts,
+						double majoring in <i><u>Computer Science</u></i> and <i><u>Economics</u></i> with a minor in
+						<i>Mathematics</i> and <i>International & Global Studies</i>.</h3>
+
+					<div class="fact_list">
+						<h3>Quick facts:</h3>
+						<ul>
+							<li>Born and raised in Vietnam, especially &#10084; the food and the people</li>
+							<li>Studied abroad in Europe, and fell in love with it ever since</li>
+							<li>A proud owner of a (fat) Corgi named Toby and 2 adorable cats (Grumpy and Vanilla)</li>
+							<li>A techie since I was a baby (started with fixing my mom's computer)</li>
+							<li>A foodie and a traveller (my goal is to travel the world and try every cuisine)</li>
+							<li>Favorite hobbies: photography and cooking</li>
+						</ul>
+					</div>
+				</div>
+				<div class="project_container" id="project_container">
+					<div class="heading">
+						<h1 class="section_title">My Projects</h1>
+						<p class="section_subtitle intro_proj">Software Engineer is my career goal, and I am skilled in
+							front-end (HTML, CSS, JavaScript, Angular, React) and back-end (Java, Python, MySQL)
+							development, as well as Android Mobile Development with Kotlin. I intend to pursue higher
+							education in Machine Learning/Artificial Intelligence and have done some machine learning
+							projects and
+							coursework. Scroll for more info!</p>
+					</div>
+
+					<div class="all_card_container">
+						<div class="card_container web">
+							<h2>Website Development</h2>
+							<div class="scrolling-wrapper-flexbox">
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Personal</span>
+										<h3 class="card_title">Personal Website</h3>
+										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
+												Phan</a></span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Personal</span>
+										<h3 class="card_title">Music-4-Mood<br />(formerly MusicLyrics)</h3>
+										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
+												Phan</a></span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Work</span>
+										<h3 class="card_title">Course Scheduling Website <br />(for University Admins)
+										</h3>
+										<span class="card_by">by <a href="#" class="card_author" title="author">Brandeis
+												Skunksworks Initiative</a></span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Work</span>
+										<h3 class="card_title">Brandeis Skunkworks Initiative Website</h3>
+										<span class="card_by">by <a href="#" class="card_author" title="author">Brandeis
+												Skunksworks Initiative</a></span>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="card_container mobile">
+							<h2>Mobile (Android) Development</h2>
+							<div class="scrolling-wrapper-flexbox">
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Personal</span>
+										<h3 class="card_title">Hospital Health</h3>
+										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
+												Phan</a></span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Personal</span>
+										<h3 class="card_title">Shopping List Application</h3>
+										<span class="card_by">by <a class="card_author" title="author">Danny
+												Phan</a></span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Academic</span>
+										<h3 class="card_title">Minesweeper</h3>
+										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
+												Phan</a></span>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="card_container ai">
+							<h2>Machine Learning/Artificial Intelligence</h2>
+							<div class="scrolling-wrapper-flexbox">
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Personal</span>
+										<h3 class="card_title">Chatbot (Deep Learning)</h3>
+										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
+												Phan</a></span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Academic</span>
+										<h3 class="card_title">ASHRAE - Great Energy Predictor III</h3>
+										<span class="card_by">by <a class="card_author" title="author">Energy Consumers
+												(Final Project Team)</a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card_container java">
+							<h2>Java & Others</h2>
+							<div class="scrolling-wrapper-flexbox">
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Academic</span>
+										<h3 class="card_title">Ollie (Text-based Personal Assistant)</h3>
+										<span class="card_by">by <a href="#" class="card_author" title="author">COSI 11A
+												Final Project Team
+											</a></span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Academic</span>
+										<h3 class="card_title">TwitterCloud</h3>
+										<span class="card_by">by <a class="card_author" title="author">Danny
+												Phan</a></span>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card_info">
+										<span class="card_category">Academic</span>
+										<h3 class="card_title">Game Of 15 Solver</h3>
+										<span class="card_by">by <a class="card_author" title="author">Danny
+												Phan</a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+				</div>
+				<div class="resume_container" id="resume_container">
+					<div class="heading">
+						<h1 class="section_title">My Resume</h1>
+						<p class="section_subtitle">To view it in a new tab, please click <a class="pdf_view"
+								href="https://drive.google.com/file/d/1eo353HCSgag7wJvZbi1OCqAeRTjda4qz/view?usp=sharing"
+								target="_blank">HERE</a></p>
+					</div>
+					<div class="pdf_container">
+						<object data="assets/Danny_Phan_resume.pdf" width="90%" height="100%">
+							<embed src="assets/Danny_Phan_resume.pdf" type="application/pdf" width="90%" height="100%">
+							</embed>
+						</object>
+					</div>
+				</div>
+				<div class="contact_container" id="contact_container">
+					<div class="heading">
+						<h1 class="section_title">Contact Me</h1>
+						<p class="section_subtitle">Feel free to contact me or view my work!</p>
+					</div>
+					<div class="info_container">
+						<div class="contact_block">
+							<a href="mailto:dannyphan@brandeis.edu" target="_blank">
+								<i class="far fa-paper-plane fa-3x"></i>
+							</a>
+							<div class="emails">
+								<h3><b>Personal:</b> phanhaidang29102000@gmail.com</h3>
+								<h3><b>Work/Academic:</b> dannyphan@brandeis.edu</h3>
+							</div>
+						</div>
+						<div class="contact_block">
+							<a href="https://github.com/dannyphan2910" target="_blank">
+								<i class="fab fa-github fa-3x"></i>
+							</a>
+							<h3><b>Github:</b> https://github.com/dannyphan2910</h3>
+						</div>
+						<div class="contact_block">
+							<a href="https://www.linkedin.com/in/danny-phan-1466a5173/" target="_blank">
+								<i class="fab fa-linkedin fa-3x"></i>
+							</a>
+							<h3><b>LinkedIn:</b> https://www.linkedin.com/in/danny-phan-1466a5173/</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

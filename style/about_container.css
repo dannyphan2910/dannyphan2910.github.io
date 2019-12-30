@@ -1,0 +1,35 @@
+.section_title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    color: #3A2335;
+}
+
+.intro {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 30px;
+    letter-spacing: 2.5px;
+    line-height: 1.5em;
+}
+
+.fact_list {
+    margin-top: 30px;
+}
+
+.fact_list h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: #1798c1;
+    -moz-text-decoration-color: #1798c1;
+}
+
+.fact_list li {
+    margin: 20px auto;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
