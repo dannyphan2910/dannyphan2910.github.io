@@ -12,6 +12,9 @@
 </head>
 
 <body>
+	<noscript>
+		Your browser does not support JavaScript! Please enable it for view the website!
+	</noscript>
 	<div class="container">
 		<div class="nav" id="nav">
 			<div class="mobile_nav_container">
@@ -76,154 +79,60 @@
 					</div>
 
 					<div class="all_card_container">
-						<div class="card_container web">
+						<div class="card_container">
 							<h2>Website Development</h2>
-							<div class="scrolling-wrapper-flexbox">
+							<div class="scrolling-wrapper-flexbox" id="web">
 
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Internship</span>
-										<h3 class="card_title">Event Management Website</h3>
-										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
-												Phan</a></span>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Personal</span>
-										<h3 class="card_title">Personal Website</h3>
-										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
-												Phan</a></span>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Personal</span>
-										<h3 class="card_title">Music-4-Mood<br />(formerly MusicLyrics)</h3>
-										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
-												Phan</a></span>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Work</span>
-										<h3 class="card_title">Course Scheduling Website <br />(for University Admins)
-										</h3>
-										<span class="card_by">by <a href="#" class="card_author" title="author">Brandeis
-												Skunksworks Initiative</a></span>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Work</span>
-										<h3 class="card_title">Brandeis Skunkworks Initiative Website</h3>
-										<span class="card_by">by <a href="#" class="card_author" title="author">Brandeis
-												Skunksworks Initiative</a></span>
-									</div>
-								</div>
+								<script>
+									addCard("web", "Internship", "Event Management Website", "Danny Phan");
+									addCard("web", "Personal", "Personal Website", "Danny Phan");
+									addCard("web", "Personal", "Music 4 Mood", "Danny Phan");
+									addCard("web", "Work", "Course Scheduling Website<br/>(for University Admins)", "Brandeis Skunksworks Initiative");
+									addCard("web", "Work", "Brandeis Skunkworks Initiative Website", "Brandeis Skunksworks Initiative");
+								</script>
 
 							</div>
 						</div>
 
-						<div class="card_container mobile">
+						<div class="card_container">
 							<h2>Mobile (Android) Development</h2>
-							<div class="scrolling-wrapper-flexbox">
+							<div class="scrolling-wrapper-flexbox" id="mobile">
 
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Academic</span>
-										<h3 class="card_title">Hospital Health</h3>
-										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
-												Phan</a></span>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Personal</span>
-										<h3 class="card_title">Shopping List Application</h3>
-										<span class="card_by">by <a class="card_author" title="author">Danny
-												Phan</a></span>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Academic</span>
-										<h3 class="card_title">Minesweeper</h3>
-										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
-												Phan</a></span>
-									</div>
-								</div>
+								<script>
+									addCard("mobile", "Academic", "Hospital Health", "Danny Phan");
+									addCard("mobile", "Personal", "Shopping List Application", "Danny Phan");
+									addCard("mobile", "Academic", "Minesweeper", "Danny Phan");
+								</script>
 
 							</div>
 						</div>
 
-						<div class="card_container ai">
+						<div class="card_container">
 							<h2>Machine Learning/Artificial Intelligence</h2>
-							<div class="scrolling-wrapper-flexbox">
+							<div class="scrolling-wrapper-flexbox" id="ai">
 
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Personal</span>
-										<h3 class="card_title">Chatbot (Deep Learning)</h3>
-										<span class="card_by">by <a href="#" class="card_author" title="author">Danny
-												Phan</a></span>
-									</div>
-								</div>
+								<script>
+									addCard("ai", "Personal", "Chatbot<br/>(using Deep Learning)", "Danny Phan");
+									addCard("ai", "Academic", "ASHRAE - Great Energy Predictor III", "Energy Consumers (Final Project Team)", "https://www.kaggle.com/dannyphan");
+								</script>
 
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Academic</span>
-										<h3 class="card_title">ASHRAE - Great Energy Predictor III</h3>
-										<span class="card_by">by <a class="card_author" title="author">Energy Consumers
-												(Final Project Team)</a></span>
-									</div>
-								</div>
 							</div>
 						</div>
 
-						<div class="card_container java">
-							<h2>Java & Others</h2>
-							<div class="scrolling-wrapper-flexbox">
+						<div class="card_container">
+							<h2>Java</h2>
+							<div class="scrolling-wrapper-flexbox" id="java">
 
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Academic</span>
-										<h3 class="card_title">Ollie (Text-based Personal Assistant)</h3>
-										<span class="card_by">by <a href="#" class="card_author" title="author">COSI 11A
-												Final Project Team
-											</a></span>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Academic</span>
-										<h3 class="card_title">TwitterCloud</h3>
-										<span class="card_by">by <a class="card_author" title="author">Danny
-												Phan</a></span>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card_info">
-										<span class="card_category">Academic</span>
-										<h3 class="card_title">Game Of 15 Solver</h3>
-										<span class="card_by">by <a class="card_author" title="author">Danny
-												Phan</a></span>
-									</div>
-								</div>
+								<script>
+									addCard("java", "Academic", "Ollie (Text-based Personal Assistant)", "COSI 11A Final Project Team");
+									addCard("java", "Academic", "TwitterCloud", "Danny Phan");
+									addCard("java", "Academic", "Game Of 15 Solver", "Danny Phan");
+								</script>
+								
 							</div>
 						</div>
 
 					</div>
-
-
 
 				</div>
 				<div class="resume_container" id="resume_container">
