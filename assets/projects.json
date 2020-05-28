@@ -1,0 +1,65 @@
+[
+    {
+       "imgSrc": "assets/images/projects/brandeisrmp.svg",
+       "projectUrl": "https://github.com/dannyphan2910/brandeis-rate-my-professor",
+       "projectTitle": "Brandeis Rate My Professor",
+       "projectInfo": "A full-fledged, student-centered Course Evaluation website inspired by the existing Rate My Professor and made to streamline students' approach to researching Brandeis courses and professors pre-registration",
+       "tags": ["Academic", "Ruby on Rails"]
+    },
+    {
+        "imgSrc": "assets/images/projects/music4mood.png",
+        "projectUrl": "https://github.com/dannyphan2910/music-lyrics",
+        "projectTitle": "Music 4 Mood",
+        "projectInfo": "A web application for music lovers to get track suggestions based on any lyrics/keywords or simply on their daily mood. The application also support Shazam-like track suggestions based on audio recordings",
+        "tags": ["Personal", "Python"]
+    },
+    {
+        "imgSrc": "assets/images/projects/hospitalhealth.png",
+        "projectUrl": "https://github.com/dannyphan2910/hospital-health",
+        "projectTitle": "Hospital Health",
+        "projectInfo": "An Android mobile application dedicated to helping people get easier access to nearby medical facilities as well as to providing reminder and news features to ensure a convenient and informed health life",
+        "tags": ["Academic", "Android"]
+    },
+    {
+        "imgSrc": "assets/images/projects/eventmanagement.png",
+        "projectUrl": "http://conera.io/",
+        "projectTitle": "Event Management App",
+        "projectInfo": "An event management application built with Angular, Python, and MySQL as a SWE Intern. It allows event coordinators to update monthly events, check in attendees using QR Code, and gather demographic data and reviews",
+        "tags": ["Work", "Python"]
+    },
+    {
+        "imgSrc": "assets/images/projects/coursescheduling.png",
+        "projectUrl": "https://brandeishoot.com/2019/02/01/skunkworks-assists-students-with-software-projects/",
+        "projectTitle": "Admin Course Scheduler",
+        "projectInfo": "Part of Brandeis Skunkworks Initiative. A Course Scheduler website for university administrators to streamline the course scheduling process for professors every semester via Manual and Automatic Scheduling",
+        "tags": ["Work", "React"]
+    },
+    {
+        "imgSrc": "assets/images/projects/energyconsumption.jpg",
+        "projectUrl": "https://www.kaggle.com/c/ashrae-energy-prediction",
+        "projectTitle": "Great Energy Predictor III",
+        "projectInfo": "Develop and analyze a prediction model of metered building energy usage based on past data of over 1,000 buildings over 3 years with pandas, NumPy, scikit-learn, LightGBM",
+        "tags": ["Academic", "Python"]
+    },
+    {
+        "imgSrc": "assets/images/projects/chatbot.png",
+        "projectUrl": "https://github.com/dannyphan2910/chatbot-deeplearning",
+        "projectTitle": "Chatbot (Deep Learning)",
+        "projectInfo": "A Python Deep Learning chatbot using NMT - Neural Machine Translation (seq2seq) with TensorFlow. The bot is trained using ~54 million Reddit comments from Jan 2015",
+        "tags": ["Personal", "Python"]
+    },
+    {
+        "imgSrc": "assets/images/projects/twittercloud.png",
+        "projectUrl": "https://github.com/dannyphan2910/twittercloud",
+        "projectTitle": "TwitterCloud",
+        "projectInfo": "A Java program that creates a word cloud with words tokenized from tweets collected from Twitter. The program also reports relevant statistics: percentage of US citizens, followers and statuses count, and top most used emojis",
+        "tags": ["Academic", "Java"]
+    },
+    {
+        "imgSrc": "assets/images/projects/ollie.png",
+        "projectUrl": "https://github.com/dannyphan2910/ollie2.0",
+        "projectTitle": "Ollie the Personal Assistant",
+        "projectInfo": "A Siri-inspired intelligent assistant operated through text-based input. It can talk about the weather, the calendar, mathematical calculation, and give Google search results. Ollie 2.0 also supports GUI",
+        "tags": ["Academic", "Java"]
+    }
+]
