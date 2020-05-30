@@ -43,7 +43,8 @@
     max-height: 350px;
     width: 80%;
     object-fit: cover;
-    box-shadow: 10px 10px 0 0 #b5838d;
+    box-shadow: 15px 15px 0 0 #b5838d;
+    margin-bottom: 10px;
 }
 
 #show-mobile.pdf-container {

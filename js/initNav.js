@@ -34,7 +34,7 @@ function initNavBar() {
         if ($(window).width() > 600 && $(window).height() > 400) {
             $("#info-container").css({ flexDirection: "column" });
         }
-        $("nav").css({ height: '55vh' });
+        $("nav").css('height', "auto");
         $("#welcome-text").show();
         $("#welcome-text").css({ marginLeft: "0", fontSize: $(window).width() < 600 ? '20px' : '2em', marginBottom: "50px" });
         $("#profile-img").show();
@@ -51,14 +51,14 @@ particlesJS.load('particles-js', 'assets/particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
-function navigate(navBtn, divId) {
-    navBtnClicked = true;
-    if ($(window).height() < 600) {
-        var initialOffset = $(window).height() * 0.19;
-    } else if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-        var initialOffset = $(window).height() * 0.1335;
+function navigate(divId) {
+    if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+        var initialOffset = $("nav").height() * 0.19;
     } else {
-        var initialOffset = $(window).height() * 0.228;
+        var initialOffset = $("nav").height() * 0.39;
     }
+
     $('html, body').animate({ scrollTop: $('#' + divId).offset().top - ($(window).scrollTop() === 0 ? initialOffset : $("nav").height()) }, 'slow');
 }
+
+$(document.body).css({paddingTop: $("nav").height() + 20});
