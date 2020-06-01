@@ -40,7 +40,7 @@ function initNavBar() {
         if ($(window).width() > 600 || $(window).height() > 400) {
             $("#info-container").css({ flexDirection: "column" });
         }
-        $("nav").css('height', "100vh");
+        $("nav").css('height', "100%");
         $("#welcome-text").show();
         $("#welcome-text").css({ marginLeft: "0", fontSize: $(window).width() < 600 ? '20px' : '2em', color: "#d8e2dc" });
         $(".name").css({backgroundColor: "#d8e2dc", color: "#3d405b"});
