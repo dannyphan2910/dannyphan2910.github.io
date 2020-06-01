@@ -5,6 +5,8 @@
 @import url('contact.css');
 @import url('project.css');
 @import url('modal.css');
+@import url('arrow.css');
+@import url('slideshow.css');
 
 html, body {
     margin: 0;
@@ -31,6 +33,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
   background-color: #faf3dd;
+  padding-top: 60vh;
 }
 
 .section-container {

@@ -1,10 +1,17 @@
 .contact-container {
     background-color: #e6beae;
+    /* background-color: white; */
     display: flex;
+    justify-content: space-between;
+}
+
+.contact-container .heading {
+    min-width: 50%;
 }
 
 .contact-content-container {
-    min-width: 50%;
+    margin-top: 7%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,8 +27,12 @@
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 2px;
-    word-wrap: break-word;
     line-height: 3rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+    overflow: hidden
 }
 
 .contact-block b {
@@ -56,16 +67,10 @@
 }
 
 .contact-img-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.contact-img-container img {
-    max-height: 500px;
+    margin: 50px 0;
+    height: 400px;
     width: 100%;
-    margin: 20px 0;
-    object-fit: cover;
+    max-width: 700px;
 }
 
 @media screen and (max-width: 1040px) {
@@ -75,6 +80,8 @@
 
     .contact-content-container {
         flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
     }
 
     .contact-block {

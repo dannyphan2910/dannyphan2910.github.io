@@ -1,16 +1,22 @@
+// particles 
+particlesJS.load('particles-js', 'assets/particles.json');
+
+var collapsedNavHeight = $(window).height() * 0.2;
 // collapse navbar when the user scrolls down from the top of the document
 function initNavBar() {
     if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
         $("#info-container").css({ flexDirection: "row" });
-        $("nav").css('height', "auto");
-        if ($(window).height() <= 600 || (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+        $("nav").css({height: "auto"});
+        collapsedNavHeight = $("nav").height();
+        if ($(window).width() <= 400 || $(window).height() <= 600 || (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
             $("#welcome-text").hide();
             $("#profile-img").hide();
         }
-        $("#welcome-text").css({ marginLeft: "20px", fontSize: "20px", marginBottom: "10px" });
+        $("#welcome-text").css({ marginLeft: "20px", fontSize: "20px", marginBottom: "10px", color: "#d8e2dc" });
+        $(".name").css({backgroundColor: "#d8e2dc", color: "#3d405b"});
         $("#profile-img").css({ height: "125px", width: "125px", marginBottom: "10px" });
         $("#particles-js").hide();
-
+        $(".arrow").hide();
         // highlight nav button
         var currentScroll = $(this).scrollTop();
         var currentSection;
@@ -31,34 +37,27 @@ function initNavBar() {
             $("#nav-" + idShort).addClass('active');
         }
     } else {
-        if ($(window).width() > 600 && $(window).height() > 400) {
+        if ($(window).width() > 600 || $(window).height() > 400) {
             $("#info-container").css({ flexDirection: "column" });
         }
-        $("nav").css('height', "auto");
+        $("nav").css('height', "100vh");
         $("#welcome-text").show();
-        $("#welcome-text").css({ marginLeft: "0", fontSize: $(window).width() < 600 ? '20px' : '2em', marginBottom: "50px" });
+        $("#welcome-text").css({ marginLeft: "0", fontSize: $(window).width() < 600 ? '20px' : '2em', color: "#d8e2dc" });
+        $(".name").css({backgroundColor: "#d8e2dc", color: "#3d405b"});
         $("#profile-img").show();
         $("#profile-img").css({ height: '300px', width: '300px', marginBottom: "50px" });
         $("#particles-js").show();
-
+        if ($(window).height() > 660) {
+            $(".arrow").show();
+        }
         $(".nav-btns").children().removeClass('active');
     }
 }
 $(window).scroll(() => initNavBar());
 
-// particles 
-particlesJS.load('particles-js', 'assets/particles.json', function () {
-    console.log('callback - particles.js config loaded');
-});
-
 function navigate(divId) {
-    if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-        var initialOffset = $("nav").height() * 0.19;
-    } else {
-        var initialOffset = $("nav").height() * 0.39;
-    }
-
-    $('html, body').animate({ scrollTop: $('#' + divId).offset().top - ($(window).scrollTop() === 0 ? initialOffset : $("nav").height()) }, 'slow');
+    $('html, body').animate({ scrollTop: $('#' + divId).offset().top - ($(window).scrollTop() == 0 ? collapsedNavHeight : $("nav").height())}, 'slow');
 }
 
-$(document.body).css({paddingTop: $("nav").height() + 20});
+
+

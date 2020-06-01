@@ -2,6 +2,7 @@
 
 .project-container {
     background-color: #eee4e1;
+    /* background-color: white; */
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
@@ -10,6 +11,10 @@
     padding-right: 50px;
     padding-left: 50px;
 }
+
+/* .project-container .section-title {
+    background-color: #eee4e1;
+} */
 
 .intro-proj {
     margin-bottom: 5px;
@@ -73,5 +78,11 @@
 @media screen and (max-width: 390px) {
     .btn-left a, .btn-right a {
         display: none !important;
+    }
+}
+
+@media screen and (max-width: 409px) {
+    .btn-left, .btn-right {
+        min-width: 2%;
     }
 }

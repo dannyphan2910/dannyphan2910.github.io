@@ -23,26 +23,32 @@
 				<div id="particles-js"></div>
 				<div id="info-container">
 					<div class="profile-pic">
-						<img src="assets/images/profilepic.jpg" onerror="this.src='https://source.unsplash.com/random'" alt="profile pic" id="profile-img" />
+						<img src="assets/images/profilepic.jpg" onerror="this.src='https://source.unsplash.com/random'"
+							alt="profile pic" id="profile-img" />
 					</div>
 					<div class="welcome-text" id="welcome-text">
 						<h1>Hello, I am <span class="name">Danny Phan</span></h1>
 					</div>
+					<div class="arrow" onclick="navigate('about-container')">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</div>
 
 				<div class="nav-btns">
-						<a id="nav-about" class="nav-btn-1" onclick="navigate('about-container')">
-							<h3>About Me</h3>
-						</a>
-						<a id="nav-project" class="nav-btn-1" onclick="navigate('project-container')">
-							<h3>Projects</h3>
-						</a>
-						<a id="nav-resume" class="nav-btn-2" onclick="navigate('resume-container')">
-							<h3>Resume</h3>
-						</a>
-						<a id="nav-contact" class="nav-btn-2" onclick="navigate('contact-container')">
-							<h3>Contact Me</h3>
-						</a>
+					<a id="nav-about" class="nav-btn-1" onclick="navigate('about-container')">
+						<h3>About Me</h3>
+					</a>
+					<a id="nav-project" class="nav-btn-1" onclick="navigate('project-container')">
+						<h3>Projects</h3>
+					</a>
+					<a id="nav-resume" class="nav-btn-2" onclick="navigate('resume-container')">
+						<h3>Resume</h3>
+					</a>
+					<a id="nav-contact" class="nav-btn-2" onclick="navigate('contact-container')">
+						<h3>Contact Me</h3>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -64,14 +70,13 @@
 					<li>A proud father of a (fat) Corgi named Toby and 2 adorable cats (Grumpy and Vanilla)</li>
 					<li>A techie since I was a baby (started with fixing my mom's computer)</li>
 					<li>A foodie and a traveller (my goal is to travel the world and try every cuisine)</li>
-					<li>Favorite hobbies: photography and cooking</li>
+					<li>Favorite hobbies: <a href="https://dannyphan.portfoliobox.net/gallery" target="_blank">photography</a> and cooking</li>
 				</ul>
 			</div>
 			<div class="fact-img">
-				<img src="https://source.unsplash.com/random/1600x900" onerror="this.src='assets/images/placeholder.png'" alt='aboutme img' />
+				<img src="assets/images/placeholder.png" onerror="this.src='https://source.unsplash.com/random/1600x900'" alt='aboutme img' />
 			</div>
 		</div>
-
 	</section>
 	<section class="section-container project-container" id="project-container">
 		<div class="heading">
@@ -118,7 +123,7 @@
 					<i class="fas fa-search-plus"></i>
 					click to zoom
 				</p>
-				<img onclick="openModal()" class="resume myBtn" src="assets/Danny_Phan_resume.png" alt="resume" />
+				<img onclick="openModal()" class="resume" src="assets/Danny_Phan_resume.png" alt="resume" />
 			</div>
 
 			<!-- The Modal -->
@@ -143,28 +148,25 @@
 			</div>
 			<div class="pdf-container" id="show-mobile">
 				<div class="resume-viewer">
-					<p>
+					<p onclick="openModal()">
 						<i class="fas fa-search-plus"></i>
 						click to zoom
 					</p>
-					<img class="resume" src="assets/Danny_Phan_resume.png" alt="resume" />
+					<img onclick="openModal()" class="resume" src="assets/Danny_Phan_resume.png" alt="resume" />
 				</div>
-
+	
 				<!-- The Modal -->
 				<div id="modal" class="modal">
 					<!-- Modal content -->
 					<div class="modal-content">
 						<span class="close" onclick="closeModal()">&times;</span>
-
-						<object data="assets/Danny_Phan_resume.pdf" type="application/pdf" width="100%" height="745px">
-							<embed src="assets/Danny_Phan_resume.pdf" type="application/pdf">
-							</embed>
-						</object>
+	
+						<iframe src="https://dannyphan2910.github.io/assets/Danny_Phan_resume.pdf" style="height:90vh; width:100%;"></iframe>
 					</div>
 				</div>
 			</div>
 			<div class="resume-img-container">
-				<img src="https://source.unsplash.com/random/1600x900" onerror="this.src='assets/images/placeholder.png'" alt='resume img' />
+				<img src="assets/images/placeholder.png" onerror="this.src='https://source.unsplash.com/random/1600x900'" alt='resume img' />
 			</div>
 		</div>
 	</section>
@@ -172,9 +174,28 @@
 		<div class="heading">
 			<h1 class="section-title">Contact Me</h1>
 			<p class="section-subtitle">Feel free to contact me or view my work!</p>
-			<div class="contact-img-container">
-				<img src="https://source.unsplash.com/random/1600x900" onerror="this.src='assets/images/placeholder.png'" alt='resume img' />
-			</div>
+			<!-- <div class="contact-img-container">
+				<img src="assets/images/placeholder.png" onerror="this.src='https://source.unsplash.com/random/1600x900'" alt='resume img' />
+			</div> -->
+			<div class="card contact-img-container">
+  
+				<div class="card_part card_part-one">
+				</div>
+				
+				 <!-- Photo 2 -->
+				<div class="card_part card_part-two">
+			  
+				</div>
+			  
+				<!-- Photo 3 -->
+				<div class="card_part card_part-three">
+				</div>
+			  
+				<!-- Photo 4 -->
+				<div class="card_part card_part-four">
+				</div>
+			  
+			  </div>
 		</div>
 		<div class="contact-content-container">
 			<div class="contact-info-container">
@@ -197,8 +218,8 @@
 				</div>
 				<div class="contact-block">
 					<i class="fab fa-linkedin fa-3x" style="color:#2867B2"></i>
-					<a href="https://www.linkedin.com/in/danny-phan-1466a5173/" target="_blank">
-						<h3><b>LinkedIn</b> www.linkedin.com/in/dannydangphan</h3>
+					<a href="https://www.linkedin.com/in/dannydangphan/" target="_blank">
+						<h3><b>LinkedIn</b> https://www.linkedin.com/in/dannydangphan/</h3>
 					</a>
 				</div>
 			</div>
@@ -207,6 +228,7 @@
 
 	<script src="js/particles.min.js"></script>
 	<script src="js/initNav.js"></script>
+
 </body>
 
 </html>
