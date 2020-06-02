@@ -68,6 +68,10 @@
     margin-left: 0;
 }
 
+.first-card {
+    margin-left: 0 !important;
+}
+
 @media screen and (max-width: 450px) {
     .project-container .heading {
         padding-right: 20px !important;

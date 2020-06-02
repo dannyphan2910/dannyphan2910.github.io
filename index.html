@@ -17,6 +17,15 @@
 		Your browser does not support JavaScript! Please enable it to view the website!
 	</noscript>
 
+	<script>
+		// No hover touch screen
+		var canHover = !(matchMedia('(hover: none)').matches);
+		if (canHover) {
+			console.log('can hover');
+			$('body').addClass('can-hover');
+		}
+	</script>
+
 	<nav id="navbar">
 		<div class="nav-wrapper">
 			<div class="nav-container">
@@ -70,11 +79,13 @@
 					<li>A proud father of a (fat) Corgi named Toby and 2 adorable cats (Grumpy and Vanilla)</li>
 					<li>A techie since I was a baby (started with fixing my mom's computer)</li>
 					<li>A foodie and a traveller (my goal is to travel the world and try every cuisine)</li>
-					<li>Favorite hobbies: <a href="https://dannyphan.portfoliobox.net/gallery" target="_blank">photography</a> and cooking</li>
+					<li>Favorite hobbies: <a href="https://dannyphan.portfoliobox.net/gallery"
+							target="_blank">photography</a> and cooking</li>
 				</ul>
 			</div>
 			<div class="fact-img">
-				<img src="assets/images/placeholder.png" onerror="this.src='https://source.unsplash.com/random/1600x900'" alt='aboutme img' />
+				<img src="assets/images/placeholder.png"
+					onerror="this.src='https://source.unsplash.com/random/1600x900'" alt='aboutme img' />
 			</div>
 		</div>
 	</section>
@@ -133,7 +144,7 @@
 					<span class="close" onclick="closeModal()">&times;</span>
 
 					<object data="assets/Danny_Phan_resume.pdf" type="application/pdf" width="100%" height="745px">
-						<embed src="assets/Danny_Phan_resume.pdf" type="application/pdf">
+						<embed src="assets/Danny_Phan_resume.pdf" type="application/pdf" width="100%" height="745px">
 						</embed>
 					</object>
 				</div>
@@ -154,19 +165,21 @@
 					</p>
 					<img onclick="openModal()" class="resume" src="assets/Danny_Phan_resume.png" alt="resume" />
 				</div>
-	
+
 				<!-- The Modal -->
 				<div id="modal" class="modal">
 					<!-- Modal content -->
 					<div class="modal-content">
 						<span class="close" onclick="closeModal()">&times;</span>
-	
-						<iframe src="https://dannyphan2910.github.io/assets/Danny_Phan_resume.pdf" style="height:90vh; width:100%;"></iframe>
+
+						<iframe src="https://dannyphan2910.github.io/assets/Danny_Phan_resume.pdf"
+							style="height:90%; width:100%;"></iframe>
 					</div>
 				</div>
 			</div>
 			<div class="resume-img-container">
-				<img src="assets/images/placeholder.png" onerror="this.src='https://source.unsplash.com/random/1600x900'" alt='resume img' />
+				<img src="assets/images/placeholder.png"
+					onerror="this.src='https://source.unsplash.com/random/1600x900'" alt='resume img' />
 			</div>
 		</div>
 	</section>
@@ -178,24 +191,24 @@
 				<img src="assets/images/placeholder.png" onerror="this.src='https://source.unsplash.com/random/1600x900'" alt='resume img' />
 			</div> -->
 			<div class="card contact-img-container">
-  
+
 				<div class="card_part card_part-one">
 				</div>
-				
-				 <!-- Photo 2 -->
+
+				<!-- Photo 2 -->
 				<div class="card_part card_part-two">
-			  
+
 				</div>
-			  
+
 				<!-- Photo 3 -->
 				<div class="card_part card_part-three">
 				</div>
-			  
+
 				<!-- Photo 4 -->
 				<div class="card_part card_part-four">
 				</div>
-			  
-			  </div>
+
+			</div>
 		</div>
 		<div class="contact-content-container">
 			<div class="contact-info-container">

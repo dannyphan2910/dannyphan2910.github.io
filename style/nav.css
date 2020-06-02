@@ -91,7 +91,7 @@ canvas {
     padding: 5px 10px;
 }
 
-.nav-btns a:hover {
+.can-hover .nav-btns a:hover {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-color: #e76f51;

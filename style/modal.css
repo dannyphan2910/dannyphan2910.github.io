@@ -18,6 +18,7 @@
     margin: 5% auto;
     padding: 5px;
     width: 50%; /* Could be more or less, depending on screen size */
+    height: 100%;
 }
 
 /* The Close Button */
