@@ -8,6 +8,7 @@ function initNavBar() {
         $("#info-container").css({ flexDirection: "row" });
         $("nav").css({height: "auto"});
         collapsedNavHeight = $("nav").height();
+        $(".section-container").css({minHeight: $(window).height() - collapsedNavHeight});
         if ($(window).width() <= 400 || $(window).height() <= 600 || (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
             $("#welcome-text").hide();
             $("#profile-img").hide();

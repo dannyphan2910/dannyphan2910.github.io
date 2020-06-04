@@ -7,6 +7,8 @@
 	<title>Danny Phan</title>
 	<link rel="stylesheet" href="style/main.css">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<link rel="apple-touch-icon" href="assets/favicon.ico" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<script src="https://kit.fontawesome.com/9c4e2bc556.js" crossorigin="anonymous"></script>
@@ -18,10 +20,9 @@
 	</noscript>
 
 	<script>
-		// No hover touch screen
+		// No hover for touch screen
 		var canHover = !(matchMedia('(hover: none)').matches);
 		if (canHover) {
-			console.log('can hover');
 			$('body').addClass('can-hover');
 		}
 	</script>

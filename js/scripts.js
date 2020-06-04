@@ -60,8 +60,9 @@ function filter(tag = '') {
         $(".project-btns button").hide();
     }
 
-    // first card no margin left
+    // first card no margin left, scroll leftmost
     $("div.post:visible:eq(0)").addClass('first-card');
+    toggleScrollLeft();
 
     // auto scroll buttons 
     if ($("#project-card-container").get(0).scrollWidth - $("#project-card-container").get(0).clientWidth <= 0) {
@@ -95,7 +96,6 @@ function toggleScrollBtn() {
 }
 
 // modal
-
 function closeModal() {
     $(".modal").hide();
 }

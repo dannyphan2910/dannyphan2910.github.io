@@ -61,4 +61,8 @@
     .fact-list, .fact-img {
         width: 100%;
     }
+
+    .fact-list h3 {
+        text-align: center;
+    }
 }   
