@@ -47,8 +47,8 @@
 
 .fact-img img {
     margin: 0 auto;
-    max-width: 95%;
-    max-height: 350px;
+    width: 400px;
+    max-height: 300px;
     object-fit: cover;
     box-shadow: -15px 15px 0 0 #ffcdb2;
 }
